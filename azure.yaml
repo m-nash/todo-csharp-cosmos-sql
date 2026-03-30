@@ -45,3 +45,5 @@ services:
     project: ./src/api
     language: csharp
     host: appservice
+
+

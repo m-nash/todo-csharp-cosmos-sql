@@ -247,7 +247,7 @@ var isOutputField = nameValue.GetType().BaseType!
     .GetField("_isOutput", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)!;
 isOutputField.SetValue(nameValue, false);
 cosmosRoleAssignment.Name.Assign(
-    BicepFunction.CreateGuid(cosmosAccount.Id, apiApp.Identity.PrincipalId));
+    BicepFunction.CreateGuid(cosmosAccount.Id, apiApp.Id));
 infra.Add(cosmosRoleAssignment);
 
 // ============================================================
