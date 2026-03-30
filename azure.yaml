@@ -3,6 +3,13 @@
 name: todo-csharp-cosmos-sql
 metadata:
   template: todo-csharp-cosmos-sql@0.0.1-beta
+infra:
+  # Default: Bicep infrastructure
+  path: infra/bicep
+  # To use C# Azure.Provisioning instead, uncomment the two lines below
+  # and comment the 'path: infra/bicep' line above:
+  # provider: code
+  # path: infra/dotnet
 workflows:
   up: 
     steps:
